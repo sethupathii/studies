@@ -12,10 +12,19 @@ const Longest_Word = () => {
     return value
   }
 
+  const valueTwo = (text) => {
+    let newOne = text.split(' ')
+
+    return newOne.reduce((acc, cur) => {
+      return cur.length > acc.length ? cur : acc
+    })
+  }
+
   return (
     <>
       <div>LongestWord</div>
-      <div>{longestWord('This is Longest sentebgdh Word')}</div>
+      <div>{longestWord('This is Longest sente Word')}</div>
+      <div>{valueTwo('This is Longest sente sentences')}</div>
     </>
   )
 }
