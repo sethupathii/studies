@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react'
 
 const ReverseString = () => {
-  console.log("reveseString");
-  
   const reverseString = (text) => {
-    console.log('test', text)
     return text.split('').reverse().join('')
   }
 
@@ -15,7 +12,7 @@ const ReverseString = () => {
       reverseText += text[i]
     }
 
-    return reverseText 
+    return reverseText
   }
 
   return (
